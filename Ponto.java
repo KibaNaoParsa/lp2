@@ -17,23 +17,19 @@ public class Ponto {
                 return this.y;
         }
 
-
-
-
 	public static void main(String[] v) {
-		System.out.println("Elyas Correa Nogueira");
 		Ponto p1 = new Ponto();
-		p1.setX(10);
-		p1.setY(20);
+		p1.setX(50);
+		p1.setY(40);
 		Ponto p2 = new Ponto();
-		p2.setX(15);
-		p2.setY(30);
-		Ponto p3 = new Ponto();
-		p3 = p1;
-                System.out.println(p1.getX() + " - " + p1.getY());
-                System.out.println(p2.getX() + " - " + p2.getY());
-		System.out.println(p3.getX() + " - " + p3.getY());
-		Ponto p4 = p3;
-		System.out.println(p4.getX() + " - " + p4.getY());
+		p2.setX(30);
+		p2.setY(20);
+		double disty = p1.getY() - p2.getY();
+		double distx = p1.getX() - p2.getX();
+		distx = Math.pow(distx, 2);
+		disty = Math.pow(disty, 2);
+		double hip = distx + disty;
+		hip = Math.sqrt(hip);	
+		System.out.println(hip);
 	}
 }
