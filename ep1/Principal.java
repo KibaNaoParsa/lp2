@@ -1,0 +1,7 @@
+public class Principal {
+	public static void main (String []v) {
+		Lista lista = new Lista();
+		lista.preencher();
+		lista.exibir();
+	}
+}
