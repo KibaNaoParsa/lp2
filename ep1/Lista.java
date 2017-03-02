@@ -40,6 +40,8 @@ public class Lista {
 			n2.ligarcomant(n1);
 			n3.ligarcomant(n2);
 			this.primeiro = n1;
+			this.ultimo = n3;
+			this.tam = 3;
 		}
 
 		void exibir() {
@@ -51,9 +53,21 @@ public class Lista {
 			System.out.println(cursor.retorno());
 
 		}
+		
+		void inserir(int valor) {
+			No aux = new No();
+			aux.inseriritem(valor);
+			aux.ligarcomant(ultimo);
+			No cursor = ultimo;
+			cursor.ligarcomprox(aux);
+			delete cursor;
+			this.ultimo = aux;		
+			this.tam += 1;
+		}
 
 	private
-
+		int tam = 0;
 		No primeiro = null;
+		No ultimo = null;
 
 }
