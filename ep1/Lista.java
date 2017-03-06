@@ -17,6 +17,7 @@ class No {
 				return this.x;
 			}
 
+
 		private
 			int x;
 			No prox = null;
@@ -60,9 +61,29 @@ public class Lista {
 			aux.ligarcomant(ultimo);
 			No cursor = ultimo;
 			cursor.ligarcomprox(aux);
-			delete cursor;
 			this.ultimo = aux;		
 			this.tam += 1;
+		}
+
+		void remover() {
+			No cursor = this.ultimo;
+			this.ultimo = cursor.ant;
+			this.ultimo.prox = null;
+			this.tam -= 1;
+		}
+
+		void pesquisa(int indice) {
+			No cursor = primeiro;
+			for (int i = 0; i < (indice-1); i++) {
+				cursor = cursor.prox;
+			}
+			System.out.println(cursor.retorno());
+		}
+
+		void limpatela() {
+			for (int i = 0; i < 100; i++) {
+				System.out.println();
+			}
 		}
 
 	private
