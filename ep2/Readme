@@ -1,0 +1,9 @@
+Arquivo Principal.java (public static void [kkk eae] main)
+
+Outro arquivo FiguraGeometrica.java (calcular perímetro e calcular área)
+
+Filhas -> Triângulo, Retângulo, Quadrado, Circunferência, Trapézio
+
+Fazer no [kkk eae] main -> Instanciar um objeto de cada (Valor escolhido pelo programador)
+
+Criar um array de figuras geométricas -> mínimo 5 posições; Estudar polimorfismo
