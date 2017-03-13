@@ -1,18 +1,18 @@
 public class Aluno implements Comparable<Aluno> {
-	
+
 	public
-		
+
 		void setAluno (String name, int age) {
 			this.nome = name;
-			this.idade = age;		
+			this.idade = age;
 		}
-		
+
 		String getNome(){
-			return this.nome;		
+			return this.nome;
 		}
 
 		int getIdade(){
-			return this.idade;		
+			return this.idade;
 		}
 
 		public int compareTo(Aluno aluno) {
@@ -26,8 +26,8 @@ public class Aluno implements Comparable<Aluno> {
    	 }
 
 	private
-	
+
 		String nome;
-		int idade;	
-	
+		int idade;
+
 }
